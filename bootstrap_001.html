@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Student Profile - M. Joshitha</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"/>
+
+  <style>
+    .profile-pic {
+      width: 140px;
+      height: 140px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid white;
+      margin-top: -70px;
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      background-color: rgba(0, 0, 0, 0.6);
+      border-radius: 50%;
+      padding: 20px;
+      background-size: 50% 50%;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Jumbotron-like Hero Section -->
+  <div class="bg-light py-5 text-center">
+    <div class="container">
+      <h1 class="display-4">M. Joshitha</h1>
+      <p class="lead">Student | Department of ECE</p>
+    </div>
+  </div>
+
+  <!-- Profile Card -->
+  <div class="container">
+    <div class="card text-center shadow">
+      <div class="card-body">
+        <!-- Note: Use a real image URL or local relative path for the image -->
+        <img src="C:\Users\kouti\Pictures\anime-girl-hd-computer-desktop-wallpaper-preview.ing.jpg" alt="Joshitha Photo" class="profile-pic" />
+        <h3 class="mt-3">M. Joshitha</h3>
+        <p class="text-muted">B.TECH - III Year</p>
+        <p>Passionate about coding, design, and learning new technologies like HTML, CSS, JavaScript, and Python.</p>
+        <div class="d-flex justify-content-center gap-3">
+          <a href="#" class="btn btn-primary">LinkedIn</a>
+          <a href="#" class="btn btn-dark">GitHub</a>
+          <a href="mailto:mjoshitha240@gmail.com" class="btn btn-success">Email</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Student Info Table -->
+  <div class="container mt-5">
+    <h2 class="text-center mb-4">Student Details</h2>
+    <div class="table-responsive">
+      <table class="table table-bordered table-striped table-hover">
+        <thead class="table-dark">
+          <tr>
+            <th scope="col">Field</th>
+            <th scope="col">Information</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Full Name</td>
+            <td>M. Joshitha</td>
+          </tr>
+          <tr>
+            <td>Department</td>
+            <td>Electronics and Communication Engineering (ECE)</td>
+          </tr>
+          <tr>
+            <td>Year</td>
+            <td>III Year</td>
+          </tr>
+          <tr>
+            <td>Email</td>
+            <td>mjoshitha240@gmail.com</td>
+          </tr>
+          <tr>
+            <td>Skills</td>
+            <td>HTML, CSS, JavaScript, Python</td>
+          </tr>
+          <tr>
+            <td>Interests</td>
+            <td>Web Development, Coding Competitions, Design</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- Carousel Section -->
+  <div class="container mt-5">
+    <h2 class="text-center mb-4">Projects & Activities</h2>
+    <div id="projectCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="C:\Users\kouti\Downloads\html5-emblem-orange-shield-and-white-text-vector.jpg" style="width: 200px; height: auto;" alt="HTML Project">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Personal Portfolio</h5>
+            <p>Created a personal portfolio using HTML and CSS.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="C:\Users\kouti\Downloads\python-logo-png-big-image-png-2400.png" style="width: 300px; height: auto;" alt="Python Project">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Python Calculator</h5>
+            <p>Built a GUI calculator using Python and Tkinter.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://via.placeholder.com/800x400?text=Event+Participation" class="d-block w-100" alt="Event">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Hackathon Participation</h5>
+            <p>Participated in college-level coding competitions.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Arrows -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#projectCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#projectCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="text-center mt-5 py-4 bg-light">
+    <p>&copy; 2025 M. Joshitha. All rights reserved.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
