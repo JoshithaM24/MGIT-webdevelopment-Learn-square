@@ -109,12 +109,48 @@
         a:hover {
             text-decoration: underline;
         }
+
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .main {
+            animation: fadeInUp 0.8s ease-out;
+        }
+
+        button:hover {
+            background-color: #218838;
+            box-shadow: 0 0 10px #28a745;
+            transform: scale(1.03);
+            transition: all 0.3s ease-in-out;
+        }
+
+        body {
+            animation: fadeIn 1s ease;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
     </style>
 </head>
 
 <body>
     <div class="main">
-        <h1>Joshitha Login Page</h1>
+        <h1>Login Page</h1>
         <h3>Enter your login credentials</h3>
 
         <!-- Redirecting with JavaScript -->
@@ -122,21 +158,19 @@
             <label for="first">Username</label>
             <div class="input-group">
                 <i class="fas fa-user"></i>
-                <input type="text" id="first" name="first" placeholder="Enter your Username" required>
+                <input type="text" id="first" name="first" placeholder="Enter your Username" required />
             </div>
 
             <label for="password">Password</label>
             <div class="input-group">
                 <i class="fas fa-lock"></i>
-                <input type="password" id="password" name="password" placeholder="Enter your Password" required>
+                <input type="password" id="password" name="password" placeholder="Enter your Password" required />
             </div>
 
             <button type="submit">Submit</button>
         </form>
 
-        <p>Not registered?
-            <a href="#">Create an account</a>
-        </p>
+        <p>Not registered? <a href="demo_008.html">Create an account</a></p>
     </div>
 
     <script>
